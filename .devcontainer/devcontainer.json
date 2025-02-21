@@ -1,8 +1,6 @@
 {
   "name": "Astro Monorepo Devbox",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+
   "workspaceFolder": "/workspace",
   "customizations": {
     "codespaces": {
@@ -11,7 +9,8 @@
       ]
     }
   },
-  "postCreateCommand": "pnpm install && cd packages/app && pnpm dev",
+  "postCreateCommand": "corepack enable && corepack prepare pnpm@10.4.1 --activate && pnpm install && cd packages/app && pnpm dev",
+
   "forwardPorts": [4321],
   "portsAttributes": {
     "4321": {
