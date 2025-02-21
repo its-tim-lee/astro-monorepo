@@ -1,6 +1,6 @@
 {
   "name": "Astro Monorepo Devbox",
-  "workspaceFolder": "/workspaces/astro-monorepo",
+  "workspaceFolder": "/.",
   "postCreateCommand": "cd packages/app && pnpm install && pnpm run dev",
   "customizations": {
     "codespaces": {
