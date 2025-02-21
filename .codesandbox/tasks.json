@@ -1,9 +1,0 @@
-{
-  "setup": [
-    "corepack enable && corepack prepare pnpm@10.4.1 --activate && pnpm install"
-  ],
-  "tasks": {
-    "dev": "cd packages/app && pnpm dev"
-  },
-  "autoRun": ["dev"]
-}
