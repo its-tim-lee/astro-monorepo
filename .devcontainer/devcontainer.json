@@ -1,19 +1,21 @@
 {
   "name": "Astro Monorepo Devbox",
-  "workspaceFolder": "/.",
-  "postCreateCommand": "cd packages/app && pnpm install && pnpm run dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceFolder": "/workspace",
   "customizations": {
     "codespaces": {
-      "portsAttributes": {
-        "4321": {
-          "label": "Astro Dev Server",
-          "onAutoForward": "openBrowser"
-        }
-      }
+      "openFiles": [
+        "packages/app/src/pages/index.astro"
+      ]
     }
   },
-  "remoteUser": "node",
-  "containerEnv": {
-    "PORT": "4321"
+  "postCreateCommand": "pnpm install && cd packages/app && pnpm dev",
+  "forwardPorts": [4321],
+  "portsAttributes": {
+    "4321": {
+      "label": "Astro Dev Server"
+    }
   }
 }
