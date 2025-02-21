@@ -11,6 +11,6 @@
   },
   "scripts": {
     "install": "pnpm install",
-    "dev": "pnpm --filter app dev"
+    "dev": "cd packages/app && npm run dev"
   }
 }
