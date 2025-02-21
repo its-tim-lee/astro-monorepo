@@ -1,5 +1,0 @@
-{
-  "install": "cd packages/app && pnpm install",
-  "start": "cd packages/app && pnpm run dev"
-}
-

@@ -1,0 +1,10 @@
+{
+  "name": "Astro Monorepo",
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "cd packages/app && pnpm install",
+  "customizations": {
+    "codespaces": {
+      "postCreateCommand": "cd packages/app && pnpm install && pnpm run dev"
+    }
+  }
+}
