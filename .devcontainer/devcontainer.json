@@ -1,10 +1,14 @@
 {
   "name": "Astro Monorepo",
-  "workspaceFolder": ".",
-  "postCreateCommand": "cd packages/app && pnpm install",
+  "workspaceFolder": "/workspaces/astro-monorepo",
+  "postCreateCommand": "pnpm install --filter app...",
   "customizations": {
     "codespaces": {
       "postCreateCommand": "cd packages/app && pnpm install && pnpm run dev"
     }
+  },
+  "remoteUser": "sandbox",
+  "containerEnv": {
+    "NODE_ENV": "development"
   }
 }
