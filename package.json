@@ -10,7 +10,7 @@
     ]
   },
   "scripts": {
-    "install": "pnpm install",
+     "install": "cd packages/app && npm install",
     "dev": "cd packages/app && npm run dev"
   }
 }
