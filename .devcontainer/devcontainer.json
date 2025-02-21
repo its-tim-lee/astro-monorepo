@@ -1,0 +1,19 @@
+{
+  "name": "Astro Monorepo Devbox",
+  "workspaceFolder": "/workspaces/astro-monorepo",
+  "postCreateCommand": "cd packages/app && pnpm install && pnpm run dev",
+  "customizations": {
+    "codespaces": {
+      "portsAttributes": {
+        "4321": {
+          "label": "Astro Dev Server",
+          "onAutoForward": "openBrowser"
+        }
+      }
+    }
+  },
+  "remoteUser": "node",
+  "containerEnv": {
+    "PORT": "4321"
+  }
+}

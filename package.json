@@ -8,9 +8,5 @@
       "packages/ds",
       "packages/app"
     ]
-  },
-  "scripts": {
-     "install": "cd packages/app && npm install",
-    "dev": "cd packages/app && npm run dev"
   }
 }
